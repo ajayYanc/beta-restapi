@@ -1,0 +1,395 @@
+[
+    {
+        "model": "yancapp.Continent",
+        "pk": "AF",
+        "fields": {
+          "name": "Africa",
+          "code": "AF",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Continent",
+        "pk": "AN",
+        "fields": {
+          "name": "Antarctica",
+          "code": "AN",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Continent",
+        "pk": "AS",
+        "fields": {
+          "name": "Asia",
+          "code": "AS",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Continent",
+        "pk": "EU",
+        "fields": {
+          "name": "Europe",
+          "code": "EU",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Continent",
+        "pk": "NA",
+        "fields": {
+          "name": "North America",
+          "code": "NA",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Continent",
+        "pk": "OC",
+        "fields": {
+          "name": "Oceania",
+          "code": "OC",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Continent",
+        "pk": "SA",
+        "fields": {
+          "name": "South America",
+          "code": "SA",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Country",
+        "pk": "AS-IND",
+        "fields": {
+            "continent": "AS",
+            "name": "India",
+            "code": "AS-IND",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Country",
+        "pk": "AS-SIN",
+        "fields": {
+            "continent": "AS",
+            "name": "Singapore",
+            "code": "AS-SIN",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.State",
+        "pk": "AS-IND-TS",
+        "fields": {
+            "country": "AS-IND",
+            "name": "Telangana",
+            "code": "AS-IND-TS",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.State",
+        "pk": "AS-IND-KA",
+        "fields": {
+            "country": "AS-IND",
+            "name": "Karnataka",
+            "code": "AS-IND-KA",
+            "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.City",
+        "pk": "AS-IND-TS-HYD",
+        "fields": {
+            "state": "AS-IND-TS",
+            "name": "Hyderabad",
+            "code": "AS-IND-TS-HYD",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.City",
+        "pk": "AS-IND-KA-BAN",
+        "fields": {
+            "state": "AS-IND-KA",
+            "name": "Bangalore",
+            "code": "AS-IND-KA-BAN",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Region",
+        "pk": "AS-IND-TS-HYD-N",
+        "fields": {
+            "city": "AS-IND-TS-HYD",
+            "name": "North",
+            "code": "AS-IND-TS-HYD-N",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Region",
+        "pk": "AS-IND-TS-HYD-E",
+        "fields": {
+            "city": "AS-IND-TS-HYD",
+            "name": "East",
+            "code": "AS-IND-TS-HYD-E",
+          "created_by": "2"
+        }
+    },    
+    {
+        "model": "yancapp.Region",
+        "pk": "AS-IND-TS-HYD-W",
+        "fields": {
+            "city": "AS-IND-TS-HYD",
+            "name": "West",
+            "code": "AS-IND-TS-HYD-W",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Region",
+        "pk": "AS-IND-TS-HYD-S",
+        "fields": {
+            "city": "AS-IND-TS-HYD",
+            "name": "South",
+            "code": "AS-IND-TS-HYD-S",
+          "created_by": "2"
+        }
+    },            
+    {
+        "model": "yancapp.Cohort",
+        "pk": "AS-IND-TS-HYD-N-APPLE",
+        "fields": {
+            "region": "AS-IND-TS-HYD-N",
+            "name": "APPLE",
+            "code": "AS-IND-TS-HYD-N-APPLE",
+            "status": true,
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Cohort",
+        "pk": "AS-IND-TS-HYD-E-BANANA",
+        "fields": {
+            "region": "AS-IND-TS-HYD-E",
+            "name": "BANANA",
+            "code": "AS-IND-TS-HYD-E-BANANA",
+            "status": true,
+          "created_by": "2"
+        }
+    },    
+    {
+        "model": "yancapp.Cohort",
+        "pk": "AS-IND-TS-HYD-W-CITRUS",
+        "fields": {
+            "region": "AS-IND-TS-HYD-W",
+            "name": "CITRUS",
+            "code": "AS-IND-TS-HYD-W-CITRUS",
+            "status": true,
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Cohort",
+        "pk": "AS-IND-TS-HYD-S-DOMINO",
+        "fields": {
+            "region": "AS-IND-TS-HYD-S",
+            "name": "DOMINO",
+            "code": "AS-IND-TS-HYD-S-DOMINO",
+            "status": true,
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Session",
+        "pk": "DISCOVER_SESSION",
+        "fields": {
+            "name": "DISCOVER SESSION",
+            "code": "DISCOVER_SESSION",
+            "duration": "30",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Session",
+        "pk": "CONCEPT_COCOON",
+        "fields": {
+            "name": "CONCEPT COCOON",
+            "code": "CONCEPT_COCOON",
+            "duration": "30",
+          "created_by": "2"
+        }
+    },    
+    {
+        "model": "yancapp.Session",
+        "pk": "PITCH_DECK",
+        "fields": {
+            "name": "PITCH DECK",
+            "code": "PITCH_DECK",
+            "duration": "30",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Session",
+        "pk": "MENTOR_MENTEE",
+        "fields": {
+            "name": "MENTOR_MENTEE",
+            "code": "MENTOR_MENTEE",
+            "duration": "30",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.PaymentMode",
+        "pk": "CASH",
+        "fields": {
+            "name": "CASH",
+            "code": "CASH",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.PaymentMode",
+        "pk": "VISA-CC",
+        "fields": {
+            "name": "VISA CREDIT CARD",
+            "code": "VISA-CC",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Tribe",
+        "pk": "AS-IND-TS-YEARFEE",
+        "fields": {
+            "fee": "50000",
+            "name": "YearlyFee-Telangana",
+            "code": "AS-IND-TS-YEARFEE",
+            "discount": "0",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.Tribe",
+        "pk": "AS-IND-KA-YEARFEE",
+        "fields": {
+            "fee": "75000",
+            "name": "YearlyFee-Telangana",
+            "code": "AS-IND-KA-YEARFEE",
+            "discount": "0",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.AlertType",
+        "pk": "ADD",
+        "fields": {
+          "name": "ADD RECORD",
+          "code": "ADD",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.AlertType",
+        "pk": "UPD",
+        "fields": {
+          "name": "UPDATE RECORD",
+          "code": "UPD",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.AlertType",
+        "pk": "REM",
+        "fields": {
+          "name": "REMOVE RECORD",
+          "code": "REM",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.AlertType",
+        "pk": "WAR",
+        "fields": {
+          "name": "WARNING",
+          "code": "WAR",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.AlertType",
+        "pk": "ERR",
+        "fields": {
+          "name": "ERROR",
+          "code": "ERR",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.CohortScoreCard",
+        "pk": "MCO",
+        "fields": {
+          "activity": "MEMBER COUNT",
+          "code": "MCO",
+          "score": "1",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.CohortScoreCard",
+        "pk": "PIT",
+        "fields": {
+          "activity": "PITCH DECK",
+          "code": "PIT",
+          "score": "10",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.eventtype", 
+        "pk": "COHORT_FORTNIGHTLY_MEET", 
+        "fields": 
+        {
+            "name": "COHORT FORTNIGHTLY MEET", 
+            "session": ["CONCEPT_COCOON", "PITCH_DECK"],
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.MemberScoreCard",
+        "pk": "ATT",
+        "fields": {
+          "activity": "ATTENDANCE",
+          "code": "ATT",
+          "score": "100",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.MemberScoreCard",
+        "pk": "PIT",
+        "fields": {
+          "activity": "PITCH DECK",
+          "code": "PIT",
+          "score": "100",
+          "created_by": "2"
+        }
+    },
+    {
+        "model": "yancapp.MemberScoreCard",
+        "pk": "CVO",
+        "fields": {
+          "activity": "CHIEF VISIONARY OFFICER",
+          "code": "CVO",
+          "score": "100",
+          "created_by": "2"
+        }
+    }        
+    
+]
