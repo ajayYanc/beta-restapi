@@ -167,10 +167,17 @@ class Reward(models.Model):
 
   created_by = models.ForeignKey(User, on_delete=models.CASCADE)
   created_at = models.DateTimeField(default=timezone.now, editable=False)
+  def save(self, *args, **kwargs):
+    detail = {}
+    detail['name'] = self.name        
+    detail['code'] = self.code
+    transaction = Transaction.objects.create(type_id=14, detail=detail, status=True, created_by=self.created_by) 
+    #MT = MemberTribe.objects.create_user(username=self.invitee.email,first_name=self.invitee.first_name,last_name=self.invitee.last_name, email=self.invitee.email) 
+    super(Reward, self).save(*args, **kwargs) 
 
 
-  def __str__(self):
-        return self.code
+ # def __str__(self):
+ #       return self.code
   
  
 class TransactionType(models.Model):

@@ -72,6 +72,7 @@ router.register(r'regionroleassignments', views.RegionRoleAssignmentViewSet)
 router.register(r'applicationcategories', views.ApplicationCategoryViewSet)
 router.register(r'membershipapplications', views.MembershipApplicationViewSet)
 router.register(r'membershipapplicationstatus', views.MembershipApplicationStatusViewSet)
+router.register(r'rewards', views.RewardViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
